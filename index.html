@@ -1,13 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>你好，GitHub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elaine's Web</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
-  <h1>覺得厲害</h1>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Elaine's Web</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#works">My Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Experience</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <section id="home" class="section">
+      <div class="container">
+        <h2 class="section-title">個人簡歷與作品集</h2>
+        <div class="section-content">
+          <p>Hi，我是Elaine
+          感謝您觀看我的個人簡歷!
+          </p>
+    
+        </div>
+      </div>
+    </section>
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-content d-flex">
+        <img src="./assets/img/images (1).jpg" alt="Your Image Description" style="width: 10rem;height: 10rem;object-fit: cover;">
+        <div class="section-description">
+          <p>我於2019年畢業於國立台北商業大學企業管理系，目前居住在屏東。</p>
+          <p>我畢業後首先從事電商與行銷相關的職務，後來萌生了轉職的想法，在2023年11月份開始投入AlphaCamp的課程中全職學習。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skill" class="section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="section-content d-flex">
+      <div class="section-item col-12 col-md-4 col-lg-4">
+        <h3>HTML/CSS</h3>
+        <ul>
+          <li>熟悉 HTML 與 CSS 的基本語法與操作</li>
+          <li>能夠使用 CSS 做出RWD網頁設計</li>
+        </ul>
+      </div>
+      <div class="section-item col-12 col-md-4 col-lg-4">
+        <h3>JavaScript</h3>
+        <ul>
+          <li>使用 ES6 語法優化程式碼</li>
+          <li>應用 ESLint 統一程式碼撰寫規則</li>
+          <li>透過 Fetch API 或 Axios 串接 API 並處理響應</li>
+        </ul>
+      </div>
+      <div class="section-item col-12 col-md-4 col-lg-4">
+        <h3>Bootstrap</h3>
+        <ul>
+          <li>能夠使用 Bootstrap 做出響應式設計</li>
+          <li>熟悉 Bootstrap 元件的操作</li>
+        </ul>
+      </div>
+      <div class="section-item col-12 col-md-4 col-lg-4">
+        <h3>SCSS</h3>
+        <ul>
+          <li>熟悉 SCSS 並能夠修改預設樣式</li>
+        </ul>
+      </div>
+      <div class="section-item col-12 col-md-4 col-lg-4">
+        <h3>Git</h3>
+        <ul>
+          <li>熟悉 Git 基礎指令，並能夠進行版本控制</li>
+          <li>通過合作專案，了解多人開發時 Git 的運用</li>
+          <li>能夠使用 GitHub Pages 建立靜態網頁</li>
+        </ul>
+      </div>
+      <div class="section-item col-12 col-md-4 col-lg-4">
+        <h3>React.js</h3>
+        <ul>
+          <li>能夠使用 React 建立專案</li>
+          <li>熟悉 React Hooks 如 useState、useEffect 等基本用法</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Portfolio Section -->
+  <section id="works" class="section">
+    <div class="container">
+      <h2 class="section-title mb-3">My Project</h2>
+      <h6 class="title mb-3">結束AlphaCamp的課程後，我與幾位學員以前後端分離的方式開發了一個家教平台的網站。</h6>
+      <div class="section-content d-flex" style="flex-wrap: nowrap;">
+        
+        <div class="img-container">
+          <img class="project-img" src="./assets/img/Homepage-login-studentmode.png" alt="side-project"
+            style="object-fit: cover">
+        </div>
+        
+        <div class="section-description">
+          <h6>專案簡介:</h6>
+          <p>串接後端API，並搭配React框架打造的小型專案。<br>
+          
+          此專案為前後分離開發的協作專案，由2位前端加上2位後端以及1位UIUX組成，我在此專案中主要負責前端開發。<br>
+  
+          功能包括登入與註冊、老師及學生編輯個人檔案、學生身分申請成為老師、以及開設及預約課程……等。</p>
+      <div class="button-container">
+        <a href="https://github.com/enternalsong/tutor" class="btn btn-primary" target="_blank">Details</a>
+        <a href="https://github.com/enternalsong/tutor" class="btn btn-outline-primary" target="_blank">Demo</a>
+      </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="section-content">
+        <div class="section-item d-flex center-items"> 
+          <h6 class="mr-3">金利食安科技股份有限公司 行銷企劃</h6>
+        <p>2022/7~2023/10</p>
+      </div>
+        <div class="section-item d-flex center-items">
+          <h6 class="mr-3">台灣司麥爾食品股份有限公司 電商專員</h6>
+          <p>2021/3~2022/5</p>
+        </div>
+        <div class="section item d-flex center-items">
+          在之前的工作中，我有許多直接與設計團隊溝通作品的經驗，這讓我深刻體會到良好的溝通和協作是成功的關鍵。<br>
+          我善於理解設計需求，並能夠最大程度的將設計稿件轉化為實際的畫面。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <div class="container">
+      <h6 class="footer-text">&copy; 2024 Elaine's Web. All rights reserved.</h6>
+    </div>
+  </footer>
+
+  <!-- JavaScript dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

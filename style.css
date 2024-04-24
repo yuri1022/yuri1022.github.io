@@ -1,0 +1,77 @@
+
+body {
+      font-family: 'Roboto', sans-serif;
+      color: #847577;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  
+    .navbar {
+      background-color: #847577;
+      box-shadow: 4px 4px 4px #a6a2a2;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+  
+    .navbar-brand,
+    .nav-link {
+      color: #fbfbf2 !important;
+      font-weight: 700;
+    }
+    .navbar-brand:hover,
+    .nav-link:hover {
+      color: #cfd2cd !important;
+    }
+  
+  .section {
+      height: 100vh;
+      padding: 20px 0;
+    }
+
+  .container{
+    width: 100%;
+    }
+
+    #about,
+    #works{
+      background-color: #fbfbf2;
+    }
+
+    #home,
+    #skill,
+    #resume{
+      background-color:#cfd2cd;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 6vh;
+    }
+  
+    .section-content {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .img-container{
+
+    }
+    .project-img {
+     width: 100%;
+     height: 100%;
+    }
+
+    .section-description{
+      margin-left: 1rem;
+    }
+
+    footer{
+      background-color: #847577;
+    }
+
+    .footer-text{
+        color: #fbfbf2;
+    }
+
