@@ -7,7 +7,8 @@
   <title>Elaine's Web</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://kit.fontawesome.com/bfc7d274ad.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -43,26 +44,58 @@
   </nav>
 
 
-    <section id="home" class="section">
-      <div class="container">
-        <h2 class="section-title">個人簡歷與作品集</h2>
-        <div class="section-content">
-          <p>Hi，我是Elaine
-          感謝您觀看我的個人簡歷!
-          </p>
-    
-        </div>
-      </div>
-    </section>
   <!-- About Me Section -->
   <section id="about" class="section">
     <div class="container">
+      <div class="greeting">
+      <h2 class="section-title">個人簡歷與作品集</h2>
+     <div class="section-content">
+      <p>Hi，我是Elaine
+       感謝您觀看我的個人簡歷!</p>
+      </div>
+      </div>
+
       <h2 class="section-title">About Me</h2>
       <div class="section-content d-flex">
-        <img src="./assets/img/images (1).jpg" alt="Your Image Description" style="width: 10rem;height: 10rem;object-fit: cover;">
-        <div class="section-description">
-          <p>我於2019年畢業於國立台北商業大學企業管理系，目前居住在屏東。</p>
-          <p>我畢業後首先從事電商與行銷相關的職務，後來萌生了轉職的想法，在2023年11月份開始投入AlphaCamp的課程中全職學習。</p>
+        <div class="section-info col-12 col-md-3 col-lg-3 d-flex">
+        <div class="img-container"><img src="./assets/img/images (1).jpg" alt="Your Image Description"
+            style="width: 10rem;height: 10rem;object-fit: cover;border-radius: 50%;">
+        </div>
+        <div class="link-icon mt-3 mb-3 d-flex">
+          <a href="https://github.com/yuri1022" target="_blank">
+          <i class="fa-brands fa-github fa-xl" ></i>
+          </a>
+        <a href="mailto:huangyijia1998@gmail.com" target="_blank">
+          <i class="fa-regular fa-envelope fa-xl"></i>
+          </a>
+        </div>
+        <div class="contact-container d-flex">
+                  <div class="contact d-flex">
+                    <div class="birthday d-flex">
+                      <i class="fa-solid fa-cake-candles fa-lg"></i>
+                      <div>1998/07/24</div>
+                    </div>
+                    <div class="city d-flex">
+                      <i class="fa-solid fa-house fa-lg"></i>
+                      <div>PingTung</div>
+                    </div>
+                    <div class="mobile d-flex">
+                      <i class="fa-solid fa-mobile fa-lg"></i>
+                      <div>0902-129-659</div>
+                    </div>
+                  </div>
+
+        </div>
+
+
+        </div>
+
+
+        <div class="section-description col-12 col-md-9 col-lg-9">
+          <p>我畢業於國立台北商業大學企業管理系，畢業後首先從事電商與行銷相關的職務。<br>
+          在職業生涯中，我發現自己更渴望能夠擁有不被取代的一技之長，驅使我下定決心轉職，<br>
+          同時也開始尋找一個能夠習得更多硬實力、同時也更能挑戰自己的就業環境。<br>
+          接著，我投入AlphaCamp的課程中全職學習程式設計與網頁開發。</p>
         </div>
 
       </div>
@@ -74,45 +107,63 @@
   <div class="container">
     <h2 class="section-title">Skills</h2>
     <div class="section-content d-flex">
+      
       <div class="section-item col-12 col-md-4 col-lg-4">
+        <div class="icon-conainer mb-3"><i class="fa-brands fa-html5" style="color: #ff8000;"></i></div>
+
         <h3>HTML/CSS</h3>
-        <ul>
-          <li>熟悉 HTML 與 CSS 的基本語法與操作</li>
+        <ul class="section-skill-item">
+          <li>熟悉HTML與CSS的基本語法操作</li>
           <li>能夠使用 CSS 做出RWD網頁設計</li>
         </ul>
       </div>
       <div class="section-item col-12 col-md-4 col-lg-4">
+        <div class="icon-conainer mb-3"><i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+      </div>
         <h3>JavaScript</h3>
-        <ul>
+        <ul class="section-skill-item">
           <li>使用 ES6 語法優化程式碼</li>
           <li>應用 ESLint 統一程式碼撰寫規則</li>
           <li>透過 Fetch API 或 Axios 串接 API 並處理響應</li>
         </ul>
       </div>
       <div class="section-item col-12 col-md-4 col-lg-4">
+        <div class="icon-conainer mb-3">
+                  <i class="fa-brands fa-bootstrap" style="color: #855cff;"></i>
+        </div>
+
         <h3>Bootstrap</h3>
-        <ul>
-          <li>能夠使用 Bootstrap 做出響應式設計</li>
+        <ul class="section-skill-item">
+          <li>使用 Bootstrap 做出RWD設計</li>
           <li>熟悉 Bootstrap 元件的操作</li>
         </ul>
       </div>
       <div class="section-item col-12 col-md-4 col-lg-4">
+        <div class="icon-conainer mb-3">
+                  <i class="fa-brands fa-sass" style="color: #d581a5;"></i>
+        </div>
+
         <h3>SCSS</h3>
-        <ul>
-          <li>熟悉 SCSS 並能夠修改預設樣式</li>
+        <ul class="section-skill-item">
+          <li>了解 SCSS 並能夠修改預設樣式</li>
         </ul>
       </div>
       <div class="section-item col-12 col-md-4 col-lg-4">
-        <h3>Git</h3>
-        <ul>
-          <li>熟悉 Git 基礎指令，並能夠進行版本控制</li>
-          <li>通過合作專案，了解多人開發時 Git 的運用</li>
-          <li>能夠使用 GitHub Pages 建立靜態網頁</li>
+        <div class="icon-conainer mb-3"><i class="fa-brands fa-git-alt" style="color: #f35135;"></i></div>
+        <h3>Git/Github</h3>
+        <ul class="section-skill-item">
+          <li>熟悉Git基礎指令，進行版本控制</li>
+          <li>使用GitHub Page建立靜態網頁</li>
+          <li>通過合作專案，了解多人開發時Git的運用</li>
         </ul>
       </div>
       <div class="section-item col-12 col-md-4 col-lg-4">
+        <div class="icon-container mb-3">
+          <i class="fa-brands fa-react" style="color: #73e1fc;"></i>
+        </div>
+
         <h3>React.js</h3>
-        <ul>
+        <ul class="section-skill-item">
           <li>能夠使用 React 建立專案</li>
           <li>熟悉 React Hooks 如 useState、useEffect 等基本用法</li>
         </ul>
@@ -125,24 +176,33 @@
   <section id="works" class="section">
     <div class="container">
       <h2 class="section-title mb-3">My Project</h2>
-      <h6 class="title mb-3">結束AlphaCamp的課程後，我與幾位學員以前後端分離的方式開發了一個家教平台的網站。</h6>
-      <div class="section-content d-flex" style="flex-wrap: nowrap;">
+      <h5 class="title mb-3">結束AlphaCamp的課程後，我與幾位學員以前後端分離的方式開發了一個家教平台的網站。</h5>
+      <div class="section-content d-flex mt-5" style="flex-wrap: nowrap;">
         
-        <div class="img-container">
-          <img class="project-img" src="./assets/img/Homepage-login-studentmode.png" alt="side-project"
-            style="object-fit: cover">
+        <div class="section-left-content col-12 col-md-6 col-lg-6">
+          <div class="img-top-container mb-3">
+          <img class="project-img" src="./assets/img/homepage.png" alt="side-project" style="object-fit: cover">
+          </div>
+          <div class="img-bot-container">
+            <img class="project-2-img" src="./assets/img/pages-mb.png" alt="side-project" style="object-fit: cover">
+          </div>
+          
         </div>
         
         <div class="section-description">
-          <h6>專案簡介:</h6>
+          <h5>專案簡介:</h5>
           <p>串接後端API，並搭配React框架打造的小型專案。<br>
-          
-          此專案為前後分離開發的協作專案，由2位前端加上2位後端以及1位UIUX組成，我在此專案中主要負責前端開發。<br>
   
-          功能包括登入與註冊、老師及學生編輯個人檔案、學生身分申請成為老師、以及開設及預約課程……等。</p>
+          主要功能包含：<br>
+          1. 登入與註冊<br>
+          2. 學生身分申請成為老師<br>
+          3. 老師及學生編輯個人檔案 <br>
+          4. 老師開設及學生預約課程<br>
+        
+        </p>
       <div class="button-container">
-        <a href="https://github.com/enternalsong/tutor" class="btn btn-primary" target="_blank">Details</a>
-        <a href="https://github.com/enternalsong/tutor" class="btn btn-outline-primary" target="_blank">Demo</a>
+        <a href="https://github.com/yuri1022/Tutor" class="detail btn btn-primary" target="_blank">Details</a>
+        <a href="https://yuri1022.github.io/Tutor" class="demo btn btn-outline-primary" target="_blank">Demo</a>
       </div>
 
         </div>
@@ -157,17 +217,20 @@
     <div class="container">
       <h2 class="section-title">Experience</h2>
       <div class="section-content">
-        <div class="section-item d-flex center-items"> 
-          <h6 class="mr-3">金利食安科技股份有限公司 行銷企劃</h6>
+        <div class="section-exp-item d-flex center-items"> 
+          <h5 class="mr-3">金利食安科技股份有限公司 行銷企劃</h5>
         <p>2022/7~2023/10</p>
       </div>
-        <div class="section-item d-flex center-items">
-          <h6 class="mr-3">台灣司麥爾食品股份有限公司 電商專員</h6>
+        <div class="section-exp-item d-flex center-items">
+          <h5 class="mr-3">台灣司麥爾食品股份有限公司 電商專員</h5>
           <p>2021/3~2022/5</p>
         </div>
-        <div class="section item d-flex center-items">
+        <div class="section-exp-item d-flex center-items">
           在之前的工作中，我有許多直接與設計團隊溝通作品的經驗，這讓我深刻體會到良好的溝通和協作是成功的關鍵。<br>
-          我善於理解設計需求，並能夠最大程度的將設計稿件轉化為實際的畫面。</div>
+          我善於理解設計需求，並能夠最大程度的將設計稿件轉化為實際的畫面。<br>
+           希望這種能力將會成為我在新工作中的寶貴資產，為團隊帶來創意和效能的提升。<br>
+      
+        感謝您的閱讀，期待有機會能夠加入　貴公司的團隊！</div>
       </div>
     </div>
   </section>

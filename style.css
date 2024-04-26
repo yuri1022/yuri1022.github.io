@@ -1,10 +1,54 @@
 
 body {
       font-family: 'Roboto', sans-serif;
-      color: #847577;
+      color: #fbfbf2;
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
+   .btn {
+    border-radius: 0.625rem;
+    width: 30%;
+    transition: opacity 0.3s ease-out;
+    }
+    .detail{
+      background-color: #a6a2a2;
+      border: none;
+      color:black;
+    }
+    .demo{
+      border-color:#a6a2a2;
+      color: #a6a2a2;
+    }
+    .btn:hover{
+      background-color: #847577;
+      opacity: 0.3;
+      border-color: #847577;
+    }
+     a {
+      margin: 0 0.5rem;
+       opacity: 1;
+       transition: opacity 0.3s ease-out;
+     }
+  
+     a:hover {
+       opacity: 0.3;
+     }
+
+     i {
+      font-size: 3rem;
+       margin-right: 1rem;
+       line-height: 0 !important;
+       opacity: 1;
+       transition: opacity 0.3s ease-out;
+      }
+     i:hover{
+      opacity: 0.5;
+     }
+
+
+     .section-item:hover{
+      color: #847577;
+     }
   
     .navbar {
       background-color: #847577;
@@ -18,6 +62,7 @@ body {
     .nav-link {
       color: #fbfbf2 !important;
       font-weight: 700;
+      font-size: 1.5rem;
     }
     .navbar-brand:hover,
     .nav-link:hover {
@@ -26,46 +71,129 @@ body {
   
   .section {
       height: 100vh;
-      padding: 20px 0;
+      padding: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-  .container{
+  .section .container{
     width: 100%;
+    height: 90%;
+    padding: 0 2rem;
+    background-color:rgb(0, 0, 0);
+    border-radius: 1.25rem;
+    box-shadow: 4px 4px 4px #a6a2a2;
+    opacity: 0.9;
     }
-
-    #about,
+    #about{
+      background-image: url('./assets/img/background-2.jpg');
+      background-size: cover;
+    }
     #works{
-      background-color: #fbfbf2;
+          background-image: url('./assets/img/background-3.jpg');
+            background-size: cover;
     }
-
     #home,
     #skill,
     #resume{
-      background-color:#cfd2cd;
+      background-image: url('./assets/img/background-1.jpg');
+      background-size: cover;
     }
     .section-title {
-      font-size: 24px;
+      font-size: 2rem;
       font-weight: bold;
-      margin-top: 6vh;
+      padding: 3.5rem 0 1rem 0;
     }
-  
+    .contact-container{
+      flex-direction: column;
+      justify-content: center;
+    }
+  .contact{
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .city,
+  .birthday,
+  .mobile{
+    width: 100%;
+    align-items: center;
+    
+  }
     .section-content {
       margin-top: 10px;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
     }
 
-    .img-container{
-
+    .section-item {
+    display: flex;
+    height: 15rem;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.3s ease-out;
     }
+
     .project-img {
      width: 100%;
      height: 100%;
     }
 
-    .section-description{
-      margin-left: 1rem;
+    .project-2-img {
+       width: 100%;
+       height: 100%;
+      }
+
+            .img-top-container,
+            .img-bot-container {
+              position: relative;
+              width: 100%;
+              overflow: hidden;
+            }
+      .img-top-container::after,
+      .img-bot-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+        }
+
+      .img-top-container:hover::after,
+      .img-bot-container:hover::after {
+        opacity: 1;
+      }
+
+.img-top-container:hover .project-img,
+.img-bot-container:hover .project-2-img {
+  opacity: 0;
+}
+
+        .img-top-container::after {
+          background-image: url('./assets/img/homepage-hover.png');
+        }
+       .img-bot-container::after {
+            background-image: url('./assets/img/pages-mb-hover.png');
+       }
+
+
+
+    .section-info{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+
+    .section-description{
+      padding-left: 1rem;
+    }
+
 
     footer{
       background-color: #847577;
@@ -74,4 +202,16 @@ body {
     .footer-text{
         color: #fbfbf2;
     }
+
+        @media screen and (max-width:480px) {
+          .section-skill-item {
+            display: none
+          }
+    
+          .section-item {
+            height: 100%;
+            flex-direction: row;
+            margin: 0.5rem;
+          }
+        }
 
