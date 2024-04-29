@@ -103,7 +103,7 @@ body {
     .section-title {
       font-size: 2rem;
       font-weight: bold;
-      padding: 3.5rem 0 1rem 0;
+      padding: 1.5rem 0 1rem 0;
     }
     .contact-container{
       flex-direction: column;
@@ -181,15 +181,28 @@ body {
        .img-bot-container::after {
             background-image: url('./assets/img/pages-mb-hover.png');
        }
-
-
+    .section-right-content {
+          display: flex;
+          flex-direction: column;
+        }
+      .button-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
     .section-info{
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
-
+    .section-exp-item {
+      flex-direction: column;
+      }
+      .section-exp-item-title{
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
     .section-description{
       padding-left: 1rem;
     }
@@ -207,11 +220,27 @@ body {
           .section-skill-item {
             display: none
           }
+          .section-description{
+            display: none;
+          }
     
           .section-item {
             height: 100%;
             flex-direction: row;
             margin: 0.5rem;
           }
+          .section-exp-item-title{
+        font-size: 1.25rem;
+      }
+            .section-exp-description{
+              font-size: 0.9rem;
+            }
+          .img-bot-container{
+                      display: none;
+          }
+          .section-title-about{
+            margin-top: 1rem;
+          }
+
         }
 
